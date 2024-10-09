@@ -28,8 +28,6 @@ ENV NODE_ENV=production
 RUN addgroup --system --gid 1001 bunjs
 RUN adduser --system --uid 1001 nextjs
 
-COPY --from=builder /app/public ./public
-
 RUN mkdir .next
 RUN chown nextjs:bunjs .next
 
