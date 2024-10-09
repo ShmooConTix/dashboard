@@ -43,6 +43,7 @@ export function SimpleConfigCard({
       headers: {
         "Content-Type": "application/json",
       },
+      cache: "no-cache",
     });
 
     toast({

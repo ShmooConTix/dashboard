@@ -1,4 +1,4 @@
-export const baseURL = "http://localhost:2000";
+export const baseURL = "http://api";
 
 export type Statistics = {
   ticketsPurchased: number;
