@@ -25,16 +25,16 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-RUN addgroup --system --gid 1001 bun
+RUN addgroup --system --gid 1001 bunjs
 RUN adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
 
 RUN mkdir .next
-RUN chown nextjs:bun .next
+RUN chown nextjs:bunjs .next
 
-COPY --from=builder --chown=nextjs:bun /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:bun /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:bunjs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:bunjs /app/.next/static ./.next/static
 
 USER nextjs
 
