@@ -49,7 +49,7 @@ export const RecentTransactions: React.FC<{ checkouts: Checkout[] }> = ({
           </CardDescription>
         </div>
       </CardHeader>
-      <CardContent className="flex-grow max-h-[400px] overflow-scroll">
+      <CardContent className="flex-grow max-h-[400px]">
         <Table>
           <TableHeader>
             <TableRow>
