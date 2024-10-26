@@ -4,6 +4,11 @@ export default function Page() {
   return (
     <div className="grid gap-6">
       <SimpleConfigCard
+        title="Landing URL"
+        description="This URL is sent to all clients to be used as the main landing server URL."
+        k="landingURL"
+      />
+      <SimpleConfigCard
         title="Base URL"
         description="This URL is sent to all clients to be used as the main ticket server URL."
         k="baseURL"
