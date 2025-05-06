@@ -1,37 +1,23 @@
+# ShmooCon Ticket Bot Dashboard 🎫🤖
+*This is part of a proof-of-concept bot to automatically purchase tickets for ShmooCon, a conference that is notoriously hard to get tickets for. [See more info here.](https://github.com/ShmooConTix/ticket-bot)*
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![image](https://github.com/user-attachments/assets/496b9c16-0281-4e81-b4d9-1bdb60e88f10)
 
-## Getting Started
+> [!CAUTION]
+> This project is provided for research and educational purposes only. It is intended solely as a proof of concept. The author is not responsible for any misuse or actions taken by end users based on this code. Use at your own risk. We are not affiliated with ShmooCon in any way.
 
-First, run the development server:
+## About / Features
+This serves as the "user facing" portion of the ticket bot / API. *Everything* is configured and managed through here. It is built with NextJS, Shadcn, and Tailwind (basically everything you'd expect from a vibe coded SaaS). Below are the main features of the dashboard:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Dashboard with live statistics via WebSocket
+- Key-value configuration management through [the API](https://github.com/ShmooConTix/api)
+- User management (as in, who will the bot get the tickets for)
+- Global state management with Zustand
+- Very nice looking UI
+- "Riddle Mode," which allows humans to solve riddles instead of AI *(this wasn't used in the final project)*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
+To run a development environment, you can run the API through the `Dockerfile`. Make sure you expose the necessary ports. If you aren't familiar with Docker, please consult the documentation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+This project / experiment is over and is not open to changes. Please contact me if you have questions.
