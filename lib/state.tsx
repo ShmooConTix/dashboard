@@ -31,6 +31,7 @@ export const appStore = create<AppState>(() => ({
   config: {
     baseURL: "",
     webhookURL: "",
+    landingURL: "",
   },
   users: [],
 }));
